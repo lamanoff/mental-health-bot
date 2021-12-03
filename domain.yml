@@ -1,7 +1,5 @@
 version: '3.0'
-session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+
 intents:
 - greet
 - goodbye
@@ -59,3 +57,7 @@ responses:
   - text: Похоже, что у тебя нет депресии. Отлично!
   utter_depression:
   - text: Скорее всего, у тебя депрессия :(
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
