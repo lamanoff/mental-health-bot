@@ -1,0 +1,61 @@
+version: '3.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_up
+- mood_down
+- energy_up
+- energy_down
+- activity_up
+- activity_down
+- rejoice_up
+- rejoice_down
+- enjoy_up
+- enjoy_down
+- interest_up
+- interest_down
+- focus_up
+- focus_down
+- dream_up
+- dream_down
+- appetite_up
+- appetite_down
+responses:
+  utter_greet:
+  - text: Привет! Как дела?
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_mood:
+  - text: Как у тебя дела с настроением?
+  utter_energy:
+  - text: Часто ли ты чувствуешь усталость?
+  utter_activity:
+  - text: Удаётся проявлять активность?
+  utter_rejoice:
+  - text: Получается радоваться?
+  utter_enjoy:
+  - text: Ты получаешь наслаждение от чего-либо?
+  utter_interest:
+  - text: У тебя остался интерес к чему-либо? Или ты его постепенно теряешь ко всему?
+  utter_focus:
+  - text: Удаётся сосредотачиваться на делах?
+  utter_dream:
+  - text: Хорошо спишь?
+  utter_appetite:
+  - text: Как дела с аппетитом?
+  utter_no_depression:
+  - text: Похоже, что у тебя нет депресии. Отлично!
+  utter_depression:
+  - text: Скорее всего, у тебя депрессия :(
